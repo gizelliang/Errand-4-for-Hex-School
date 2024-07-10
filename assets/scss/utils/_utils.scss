@@ -1,2 +1,7 @@
+$max:16;
 
-  
+@for $i from 0 through $max {
+ .ml-#{$i}{
+    margin-left:($max - $i) * 4px;
+ }
+}

@@ -1,11 +1,17 @@
+
 .navbar{
   background: $primary-color;
   font-size: $font-size-h5;
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  
 }
 
-.navbar-logo{
+//all.scss中已經引入Noto Sans, 但這邊還要引入一次？
+.bg-primary {
+  background-color: #aa0601;
+}
+
+.navbar-logo img{
   width:80px;
-  @include mobile{
-    margin: 0 0 16px 16px;
-  }
 }
