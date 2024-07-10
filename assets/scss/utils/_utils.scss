@@ -4,4 +4,7 @@ $max:16;
  .ml-#{$i}{
     margin-left:($max - $i) * 4px;
  }
+ .mb-#{$i}{
+    margin-bottom:($max - $i) * 4px;
+ }
 }

@@ -1,4 +1,48 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+ footer {
+  background-color:$primary-color;
+
+}
+
+
+.footer-pages a{
+  @include mobile{
+    display:none;
+  }
+}
+
+.flex{
+  display: flex;
+}
+.column{
+  flex-direction: column;
+  @include mobile{
+    flex-direction:column-reverse;
+    margin-top: 24px;
+  }
+}
+.justify-between{
+  justify-content: space-between;
+
+}
+.email,.phone img{
+  width:40px;
+  @include mobile{
+    width:24px;
+  }
+}
+
+
+
+.social-icons img{
+  width:48px;
+  margin-left: 32px;
+  @include pad{
+    width:40px;
+    margin-left:16px
+  }
+  @include mobile{
+    margin-top: 24px;
+    width:24px;
+    margin-left: 8px;
+  }
 }
