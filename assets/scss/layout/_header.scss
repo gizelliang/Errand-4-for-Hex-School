@@ -1,4 +1,11 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.navbar{
+  background: $primary-color;
+  font-size: $font-size-h5;
+}
+
+.navbar-logo{
+  width:80px;
+  @include mobile{
+    margin: 0 0 16px 16px;
+  }
 }
