@@ -1,0 +1,20 @@
+.category{
+    font-size:32px;
+    a{
+        text-decoration: none;
+        color:$primary-dark;
+          
+    }
+    li{
+        padding:24px 150px;
+        :hover{
+         border-bottom:8px solid $primary-color;
+         
+        }
+
+    }
+}
+
+.img-area img{
+    width:50%;
+}

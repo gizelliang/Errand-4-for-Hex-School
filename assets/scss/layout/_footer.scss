@@ -1,48 +1,85 @@
- footer {
-  background-color:$primary-color;
-
+footer{
+  background-color: $primary-color;
+  font-size:$font-size-base;
+  color:#fff;
+ a{
+  text-decoration:none;
+  color:#fff;
+ }
 }
 
-
-.footer-pages a{
+.contact-info{
+  font-size:36px;
+  padding-bottom: 32px;
+  a{
+    display: block;
+  }
+  img{
+    width:36px;
+    margin-right: 20px;
+    
+  }
+  @include mobile{
+    padding-top: 24px;
+  }
+}
+.page-list{
+  padding-top: 60px;
+  padding-bottom: 36px;
+  a{
+    padding-right:48px ;
+  }
   @include mobile{
     display:none;
   }
 }
-
-.flex{
-  display: flex;
-}
-.column{
-  flex-direction: column;
-  @include mobile{
-    flex-direction:column-reverse;
-    margin-top: 24px;
+.social-icon {
+  padding-top:48px;
+  a{
+    padding-left:32px;
+    @include pad{
+      padding-left: 16px;
+    }
+    @include mobile{
+      padding-left: 8px;
+    }
   }
-}
-.justify-between{
-  justify-content: space-between;
-
-}
-.email,.phone img{
-  width:40px;
-  @include mobile{
-    width:24px;
-  }
-}
-
-
-
-.social-icons img{
+  img{
   width:48px;
-  margin-left: 32px;
   @include pad{
     width:40px;
-    margin-left:16px
   }
   @include mobile{
-    margin-top: 24px;
     width:24px;
-    margin-left: 8px;
+  }
+  }
+  @include mobile{
+    padding-top: 24px;
+  }
+}
+
+.footer-bottom{
+  border-top:1px solid #fff;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  a{
+    padding-left: 48px;
+    font-size:$font-size-sm;
+    @include mobile{
+      padding-left: 0;
+    }
+  }
+  @include mobile{
+    flex-direction:column;
+
+  }
+  .footer-bottom-link{
+    @include mobile{
+      display: flex;
+    flex-direction:column;
+      
+    }
   }
 }

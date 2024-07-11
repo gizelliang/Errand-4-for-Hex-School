@@ -7,4 +7,24 @@ $max:16;
  .mb-#{$i}{
     margin-bottom:($max - $i) * 4px;
  }
+ .pt-#{$i}{
+   padding-top: ($max - $i) * 4px;
+ }
 }
+
+.flex{
+   display: flex;
+}
+
+.column{
+   flex-direction:column;
+}
+
+.justify-between{
+   justify-content: space-between;
+}
+
+.flex-nowrap{
+   flex-wrap: nowrap;
+}
+
