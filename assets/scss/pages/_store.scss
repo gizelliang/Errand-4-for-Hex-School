@@ -121,23 +121,31 @@
     
     margin-top:80px;
     margin-bottom: 80px;
-    align-items:center;
+    @include mobile{
+        height:45px;
+        
+        margin-top: 64px;
+        margin-bottom: 64px;
+        padding-right: 12px;
+        padding-left: 12px;
+       
+    }
   
     a{
         text-decoration:none;
         color:#000;
     }
-    @include mobile{
-        height:45px;
-        margin-top: 64px;
-        margin-bottom: 64px;
-    }
+   
     li:first-child a{
         padding:11px 12px;
         font-size:19px;
         &:hover{
           background-color: #f2f2f2;
           color:#000;
+          }
+          @include mobile{
+            font-size:16px;
+            
           }
         }
       li:last-child a{
@@ -146,6 +154,10 @@
         &:hover{
           background-color: #f2f2f2;
           color:#000;
+          }
+          @include mobile{
+            font-size:16px;
+            
           }
         }
       

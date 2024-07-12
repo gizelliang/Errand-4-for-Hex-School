@@ -45,6 +45,9 @@ $max:16;
    flex-wrap: wrap;
 }
 
+.flex-nowrap{
+   flex-wrap:nowrap;
+}
 .justify-center{
 justify-content: center;
 
@@ -53,7 +56,14 @@ justify-content: center;
 .align-center{
    align-items:center;
 }
-.px-3{
-   padding-left: 12px;
-   padding-right: 12px;
+.mx-3{
+   margin-left: 12px;
+   margin-right: 12px;
+}
+
+.pl-3{
+   padding-left:12px;
+}
+.pr-3{
+   padding-right:12px;
 }
