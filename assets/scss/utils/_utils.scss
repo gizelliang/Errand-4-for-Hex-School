@@ -12,6 +12,23 @@ $max:16;
  }
 }
 
+@for $i from 1 to 12{
+   .col-#{$i}{
+      width:calc(100% * $i /12);
+   }
+   @include pad{
+   .col-md-#{$i}{
+      width:calc(100% * $i /12);
+   }
+   }
+  
+}
+
+@include mobile{
+   .col-sm-12{
+      width:100%;
+  }
+}
 .flex{
    display: flex;
 }
@@ -24,7 +41,7 @@ $max:16;
    justify-content: space-between;
 }
 
-.flex-nowrap{
-   flex-wrap: nowrap;
+.flex-wrap{
+   flex-wrap: wrap;
 }
 
